@@ -47,6 +47,8 @@ input{
     border: 1px solid #FFFFFF;
     background: #bbbbbb;
     color: #555555;
+    appearance: nome;
+    text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -57,7 +59,7 @@ button{
     font-weight: 700;
     font-size: 36px;
     border-radius: 10px;
-    background-color: #AEC346;
+    background-color: #d61818;
     color: #FFFFFF;
     display: block;
     margin: auto;
@@ -70,3 +72,19 @@ button:hover{
 button:active{
     opacity: 0.4;
 }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+#countdown {
+    font-size: 50px;
+    font-weight: bold;
+    color: #f80f0f;
+    margin-top: 20px;
+    text-align: center;
+    animation: pulse 1s infinite;
+  }
+  
