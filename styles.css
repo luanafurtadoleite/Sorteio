@@ -87,4 +87,35 @@ button:active{
     text-align: center;
     animation: pulse 1s infinite;
   }
+
+  @media (max-width: 600px) {
+    .input-min, .input-max, .button-select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+  }
+  
+    img {
+        max-width: 100%;
+        height: auto;
+  }
+
+    h1{
+        font-size: 70px;
+    }
+
+    button{
+        width: 70%;
+        height: 50%;
+    }
+  
+   #countdown {
+        font-size: 2rem; /* Tamanho de fonte responsivo */
+  }
+  
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  }
   
