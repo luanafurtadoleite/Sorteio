@@ -14,6 +14,12 @@ function clickprees() {
         alert("O valor mínimo deve ser menor que o valor máximo.");
         return;
     }
+
+    if (isNaN(min) || isNaN(max)) {
+        alert("Por favor, insira números válidos nos campos de entrada.");
+        return; // Encerra a função se a validação falhar
+    }
+    
     countdown = 5; 
 
     
